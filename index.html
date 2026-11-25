@@ -1,57 +1,105 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABHISHEK GAMING</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABHISHEK GAMING | Official</title>
+  <meta name="description" content="Welcome to ABHISHEK GAMING. Discover and download PC games.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>ABHISHEK GAMING</h1>
-    <p>WELCOME TO MY GAMING WORLD</p>
+<header class="navbar">
+  <a class="logo" href="#home">🎮 ABHISHEK <span>GAMING</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+  </nav>
+  <a class="nav-btn" href="#games">DOWNLOADS</a>
 </header>
 
-<nav>
-    <a href="#home">HOME</a>
-    <a href="#games">GAMES</a>
-    <a href="#about">ABOUT</a>
-</nav>
-
-<section id="home" class="hero">
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">WELCOME TO MY GAMING WORLD</p>
+    <h1>ABHISHEK <span>GAMING</span></h1>
     <h2>PLAY. DOWNLOAD. ENJOY.</h2>
-    <p>Welcome to ABHISHEK GAMING</p>
+    <p class="intro">
+      Discover amazing PC games and enjoy your gaming experience.
+    </p>
+    <a href="#games" class="main-btn">⬇ EXPLORE GAMES</a>
+  </div>
+
+  <div class="profile">
+    <img src="abhishek.jpg" alt="Abhishek - ABHISHEK GAMING">
+  </div>
 </section>
 
-<section id="games">
-    <h2>MY PC GAMES</h2>
+<section class="games-section" id="games">
+  <div class="section-heading">
+    <p>DISCOVER YOUR NEXT GAME</p>
+    <h2>MY PC <span>GAMES</span></h2>
+  </div>
 
-    <div class="game-card">
+  <div class="game-grid">
+    <article class="game-card">
+      <div class="game-image">🎮</div>
+      <div class="game-info">
+        <span class="game-type">WINDOWS PC GAME</span>
         <h3>ABHI GAME HUB</h3>
-        <p>Windows PC Game</p>
+        <p>Enjoy the ABHI GAME HUB gaming experience.</p>
+        <a class="download-btn"
+           href="ABHI_GAME_HUB.zip"
+           download>⬇ DOWNLOAD GAME</a>
+      </div>
+    </article>
 
-        <a href="ABHI_GAME_HUB.zip"
-           class="download-btn"
-           download>
-           DOWNLOAD GAME
-        </a>
-    </div>
+    <article class="game-card coming">
+      <div class="game-image">🏎️</div>
+      <div class="game-info">
+        <span class="game-type">COMING SOON</span>
+        <h3>RACING GAME</h3>
+        <p>New racing adventures are coming soon.</p>
+        <span class="soon-btn">COMING SOON</span>
+      </div>
+    </article>
+
+    <article class="game-card coming">
+      <div class="game-image">⚔️</div>
+      <div class="game-info">
+        <span class="game-type">COMING SOON</span>
+        <h3>ACTION GAME</h3>
+        <p>More exciting PC games are on the way.</p>
+        <span class="soon-btn">COMING SOON</span>
+      </div>
+    </article>
+  </div>
 </section>
 
-<section id="about">
-    <h2>ABOUT US</h2>
-    <p>Welcome to ABHISHEK GAMING.
-       Download and enjoy my PC games!</p>
+<section class="about" id="about">
+  <div>
+    <p class="tag">THE CREATOR</p>
+    <h2>ABOUT <span>ME</span></h2>
+    <p>
+      Hi! I'm Abhishek. Welcome to ABHISHEK GAMING.
+      This is my gaming website where you can discover
+      PC games and enjoy gaming content.
+    </p>
+    <h3>GAME ON! 🎮</h3>
+  </div>
+  <div class="about-icon">👑</div>
 </section>
+</main>
 
 <footer>
-    <p>© 2026 ABHISHEK GAMING</p>
+  <p>© 2026 <span>ABHISHEK GAMING</span> | All Rights Reserved.</p>
+  <p>PLAY • DOWNLOAD • ENJOY</p>
 </footer>
 
 </body>
 </html>
+
+
 
