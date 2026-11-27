@@ -3,104 +3,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="google-site-verification" content="TpRBBOFH13woPMyVoGocZKVN5jD1tN5JcYFWrQmEmKY" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABHISHEK GAMING | Official</title>
-  <meta name="description" content="Welcome to ABHISHEK GAMING. Discover and download PC games.">
+  <title>ABHI GAME HUB</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="navbar">
-  <a class="logo" href="#home">🎮 ABHISHEK <span>GAMING</span></a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#games">Games</a>
-    <a href="#about">About</a>
-  </nav>
-  <a class="nav-btn" href="#games">DOWNLOADS</a>
-</header>
-
-<main>
-<section class="hero" id="home">
-  <div class="hero-content">
-    <p class="tag">WELCOME TO MY GAMING WORLD</p>
-    <h1>ABHISHEK <span>GAMING</span></h1>
-    <h2>PLAY. DOWNLOAD. ENJOY.</h2>
-    <p class="intro">
-      Discover amazing PC games and enjoy your gaming experience.
-    </p>
-    <a href="#games" class="main-btn">⬇ EXPLORE GAMES</a>
-  </div>
-
-  <div class="profile">
-    <img src="abhishek.jpg" alt="Abhishek - ABHISHEK GAMING">
-  </div>
-</section>
-
-<section class="games-section" id="games">
-  <div class="section-heading">
-    <p>DISCOVER YOUR NEXT GAME</p>
-    <h2>MY PC <span>GAMES</span></h2>
-  </div>
-
-  <div class="game-grid">
-    <article class="game-card">
-      <div class="game-image">🎮</div>
-      <div class="game-info">
-        <span class="game-type">WINDOWS PC GAME</span>
-        <h3>ABHI GAME HUB</h3>
-        <p>Enjoy the ABHI GAME HUB gaming experience.</p>
-        <a class="download-btn"
-           href="ABHI_GAME_HUB.zip"
-           download>⬇ DOWNLOAD GAME</a>
+  <header class="top">
+    <a class="brand" href="#"><span>ABHI</span> GAME HUB</a>
+    <nav><a href="#games">GAMES</a><a href="#about">ABOUT</a><a href="youtube.html">YOUTUBE</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">WELCOME TO THE ARCADE</p>
+      <h1>PLAY YOUR<br><span>FAVOURITE GAMES.</span></h1>
+      <p class="sub">Small games made with Python, rebuilt to play right here in your browser.</p>
+      <a class="cta" href="#games">EXPLORE GAMES ↓</a>
+      <div class="hero-mark">ABHI<span> //</span></div>
+    </section>
+    <section id="games" class="section">
+      <div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>CHOOSE A GAME</h2></div><span class="count">06 GAMES</span></div>
+      <div class="cards">
+        <article class="game-card"><div class="game-icon car">🏎️</div><div class="card-info"><span class="tag">RACING</span><h3>Car Racer</h3><p>Dodge traffic and build your score.</p><button onclick="openGame('car')">PLAY NOW ↗</button></div></article>
+        <article class="game-card"><div class="game-icon guess">🎯</div><div class="card-info"><span class="tag">PUZZLE</span><h3>Number Guess</h3><p>Find the secret number from 1 to 20.</p><button onclick="openGame('guess')">PLAY NOW ↗</button></div></article>
+        <article class="game-card"><div class="game-icon pong">🏓</div><div class="card-info"><span class="tag">ARCADE</span><h3>Pong vs AI</h3><p>Challenge the computer in a paddle match.</p><button onclick="openGame('pong')">PLAY NOW ↗</button></div></article>
+        <article class="game-card"><div class="game-icon shooter">🟩</div><div class="card-info"><span class="tag">ACTION</span><h3>Mini IGI</h3><p>Move around and hit the moving targets.</p><button onclick="openGame('shooter')">PLAY NOW ↗</button></div></article>
+        <article class="game-card"><div class="game-icon snake">🐍</div><div class="card-info"><span class="tag">CLASSIC</span><h3>Snake Grid</h3><p>Eat food, grow longer, avoid the walls.</p><button onclick="openGame('snake')">PLAY NOW ↗</button></div></article>
+        <article class="game-card"><div class="game-icon snake2">🐍</div><div class="card-info"><span class="tag">CLASSIC</span><h3>Snake Classic</h3><p>A second snake version with a high score.</p><button onclick="openGame('snake2')">PLAY NOW ↗</button></div></article>
       </div>
-    </article>
+    </section>
+    <section id="about" class="about"><p class="eyebrow">ABOUT THIS PROJECT</p><h2>MADE BY SANDARU.</h2><p>These are browser-friendly versions of your uploaded mini-game ideas. No Python installation is needed to play them on the website.</p></section>
+  </main>
+  <footer>© 2026 ABHI GAME HUB <span>BUILT TO PLAY.</span></footer>
 
-    <article class="game-card coming">
-      <div class="game-image">🏎️</div>
-      <div class="game-info">
-        <span class="game-type">COMING SOON</span>
-        <h3>RACING GAME</h3>
-        <p>New racing adventures are coming soon.</p>
-        <span class="soon-btn">COMING SOON</span>
-      </div>
-    </article>
-
-    <article class="game-card coming">
-      <div class="game-image">⚔️</div>
-      <div class="game-info">
-        <span class="game-type">COMING SOON</span>
-        <h3>ACTION GAME</h3>
-        <p>More exciting PC games are on the way.</p>
-        <span class="soon-btn">COMING SOON</span>
-      </div>
-    </article>
+  <div class="modal" id="gameModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head"><div><p class="eyebrow">NOW PLAYING</p><h2 id="gameTitle">GAME</h2></div><button class="close" onclick="closeGame()" aria-label="Close game">✕</button></div>
+      <div id="gameArea" class="game-area"></div>
+      <p class="help" id="gameHelp"></p>
+    </div>
   </div>
-</section>
-
-<section class="about" id="about">
-  <div>
-    <p class="tag">THE CREATOR</p>
-    <h2>ABOUT <span>ME</span></h2>
-    <p>
-      Hi! I'm Abhishek. Welcome to ABHISHEK GAMING.
-      This is my gaming website where you can discover
-      PC games and enjoy gaming content.
-    </p>
-    <h3>GAME ON! 🎮</h3>
-  </div>
-  <div class="about-icon">👑</div>
-</section>
-</main>
-
-<footer>
-  <p>© 2026 <span>ABHISHEK GAMING</span> | All Rights Reserved.</p>
-  <p>PLAY • DOWNLOAD • ENJOY</p>
-</footer>
-
+  <script src="games.js"></script>
 </body>
 </html>
-
-
-
